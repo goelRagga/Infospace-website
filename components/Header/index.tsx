@@ -39,19 +39,20 @@ const Header = () => {
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/InfoSpaceLogo.png"
               alt="logo"
-              width={119.03}
+              width={50}
               height={30}
-              className="hidden w-full dark:block"
+              className=" block w-full"
             />
-            <Image
+
+            {/* <Image
               src="/images/logo/logo-light.svg"
               alt="logo"
               width={119.03}
               height={30}
               className="w-full dark:hidden"
-            />
+            /> */}
           </a>
 
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -153,20 +154,6 @@ const Header = () => {
 
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
             <ThemeToggler />
-
-            <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
-              className="text-regular font-medium text-waterloo hover:text-primary"
-            >
-              GitHub Repo 🌟
-            </Link>
-
-            <Link
-              href="https://nextjstemplates.com/templates/solid"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
-            >
-              Get Pro 🔥
-            </Link>
           </div>
         </div>
       </div>

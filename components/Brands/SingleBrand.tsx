@@ -25,20 +25,9 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         transition={{ duration: 1, delay: id }}
         viewport={{ once: true }}
         href={href}
-        className="animate_top mx-w-full relative block h-10 w-[98px]"
+        className="animate_top relative mx-4 block h-[80px] w-[200px] rounded-md bg-white  shadow-[0_0_10px_rgba(0,0,0,0.1)]"
       >
-        <Image
-          className="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
-          src={image}
-          alt={name}
-          fill
-        />
-        <Image
-          className="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
-          src={imageLight}
-          alt={name}
-          fill
-        />
+        <Image className="rounded-md px-2 py-1" src={image} alt={name} fill />
       </motion.a>
     </>
   );
