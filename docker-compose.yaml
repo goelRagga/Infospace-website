@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  ibv-react:
+    image: ibv-react:latest
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: ibv-fe
+    ports:
+      - "3000:80"
