@@ -72,7 +72,7 @@ export default function ComingSoon() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="mb-20 text-[95px] font-bold tracking-widest"
+            className="mb-16 text-[68px] font-bold tracking-widest md:mb-20 md:text-[95px]"
             style={{ letterSpacing: "0.2em" }}
           >
             COMING
@@ -82,7 +82,7 @@ export default function ComingSoon() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mb-16 text-[95px] font-bold tracking-widest"
+            className="mb-16  text-[68px]  font-bold tracking-widest md:text-[95px]"
             style={{ letterSpacing: "0.2em" }}
           >
             SOON
