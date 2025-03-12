@@ -34,7 +34,7 @@ export default function ComingSoon() {
   useEffect(() => {
     if (windowSize.width) {
       setShowConfetti(true);
-      const timer = setTimeout(() => setShowConfetti(false), 8000);
+      const timer = setTimeout(() => setShowConfetti(false), 5000);
       return () => clearTimeout(timer);
     }
   }, [windowSize]);
@@ -66,12 +66,19 @@ export default function ComingSoon() {
 
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      <div className="relative flex h-full w-full items-center justify-center">
+      <div className="relative flex h-full w-full flex-col items-center justify-center">
+        <motion.img
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          src={"/images/WEBLOGONew.png"}
+          className="mx-auto mb-0  w-[250px] rounded-lg"
+        />
         <div className="w-full text-center text-white">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="mb-16 text-[68px] font-bold tracking-widest md:mb-20 md:text-[95px]"
             style={{ letterSpacing: "0.2em" }}
           >
@@ -81,7 +88,7 @@ export default function ComingSoon() {
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 1 }}
             className="mb-16  text-[68px]  font-bold tracking-widest md:text-[95px]"
             style={{ letterSpacing: "0.2em" }}
           >
@@ -92,7 +99,7 @@ export default function ComingSoon() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="mb-6 text-xl"
+            className="mb-6 text-lg"
           >
             We will be celebrating the launch of our new site very soon!
           </motion.p>

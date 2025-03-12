@@ -5,13 +5,13 @@ import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
-import { Inter, Poppins } from "next/font/google";
+import { Comfortaa, Inter, Poppins } from "next/font/google";
 import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
 
-const poppins = Poppins({
+const comforta = Comfortaa({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`dark:bg-black ${inter.className} ${poppins.className}}`}
+        className={`dark:bg-black ${inter.className} ${comforta.className}}`}
       >
         <ThemeProvider
           enableSystem={false}
